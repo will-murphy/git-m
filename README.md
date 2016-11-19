@@ -1,7 +1,8 @@
 # Use
 
+In a git repo, make some changes, then run:
+
 ```bash
-# Make some changes...
 git m "message"
 ```
 
