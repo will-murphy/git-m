@@ -1,7 +1,6 @@
 # Use
 
 ```bash
-# In a repo:
 # Make some changes...
 git m "message"
 ```
