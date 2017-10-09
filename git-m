@@ -1,1 +1,6 @@
-git add -A && git commit -m "$1" && git pull origin "$(git rev-parse --abbrev-ref HEAD)" && git push origin "$(git rev-parse --abbrev-ref HEAD)"
+if [[ $param = *[!\ ]* ]]; then
+    MESSAGE="$1"
+else
+    MESSAGE="$(printf '\xE2\x80\x8B')"
+fi
+git add -A && git commit -m "$MESSAGE" && git pull origin "$(git rev-parse --abbrev-ref HEAD)" && git push origin "$(git rev-parse --abbrev-ref HEAD)"
